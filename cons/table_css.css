@@ -1,0 +1,43 @@
+.table1 { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+.tr1:nth-of-type(odd) { 
+	background: #e4e2e2; 
+	}
+
+.th1 { 
+	background: #226898; 
+	color: white; 
+	font-weight: bold; 
+    font-size: 16px;
+	}
+
+.td1, .th1{ 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+    text-align: center;
+    user-select: none;
+	}
+
+    .td1{
+        font-size: 15px;
+    }
+
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media screen and (max-width: 800px) {
+
+	.table1 { 
+	  	width: 685px; 
+	}
+
+}
